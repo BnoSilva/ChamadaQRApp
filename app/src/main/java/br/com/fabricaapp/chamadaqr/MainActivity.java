@@ -36,19 +36,17 @@ public class MainActivity extends AppCompatActivity
                     String usuario = txt_Login.getText().toString();
                     String senha = txt_Senha.getText().toString();
                     if (usuario.equals("admin") && senha.equals("1234")) {
-                    Intent TelaPrincipal = new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaPrincipal.class);
-                    startActivity(TelaPrincipal);
+                        startActivity(new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaPrincipal.class));
                     } else {
-                    AlertDialog.Builder msgErro = new AlertDialog.Builder(this);
-                    msgErro.setTitle("Erro");
-                    msgErro.setMessage("Usuário ou Senha incorretos\nTente Novamente");
-                    alertaLogin = msgErro.create();
-                    alertaLogin.show();
+                        AlertDialog.Builder msgErro = new AlertDialog.Builder(this);
+                        msgErro.setTitle("Erro");
+                        msgErro.setMessage("Usuário ou Senha incorretos\nTente Novamente");
+                        alertaLogin = msgErro.create();
+                        alertaLogin.show();
                     }
                 break;
                 case R.id.btnRegistrar:
-                    Intent TelaCadastro = new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaCadastro.class);
-                    startActivity(TelaCadastro);
+                    startActivity(new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaCadastro.class));
                     break;
             }
         }

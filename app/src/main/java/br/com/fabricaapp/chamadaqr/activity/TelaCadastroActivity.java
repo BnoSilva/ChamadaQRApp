@@ -1,9 +1,11 @@
-package br.com.fabricaapp.chamadaqr;
+package br.com.fabricaapp.chamadaqr.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TelaCadastro extends AppCompatActivity {
+import br.com.fabricaapp.chamadaqr.R;
+
+public class TelaCadastroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

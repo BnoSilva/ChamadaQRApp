@@ -1,4 +1,4 @@
-package br.com.fabricaapp.chamadaqr;
+package br.com.fabricaapp.chamadaqr.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.widget.*;
 import android.view.View;
+
+import br.com.fabricaapp.chamadaqr.R;
 
 public class MainActivity extends AppCompatActivity
         implements View.OnClickListener {
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity
                     String usuario = txt_Login.getText().toString();
                     String senha = txt_Senha.getText().toString();
                     if (usuario.equals("admin") && senha.equals("1234")) {
-                    Intent TelaPrincipal = new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaPrincipal.class);
+                    Intent TelaPrincipal = new Intent(MainActivity.this, TelaPrincipalActivity.class);
                     startActivity(TelaPrincipal);
                     } else {
                     AlertDialog.Builder msgErro = new AlertDialog.Builder(this);
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity
                     }
                 break;
                 case R.id.btnRegistrar:
-                    Intent TelaCadastro = new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaCadastro.class);
+                    Intent TelaCadastro = new Intent(MainActivity.this, TelaCadastroActivity.class);
                     startActivity(TelaCadastro);
                     break;
             }

@@ -1,6 +1,7 @@
 package br.com.fabricaapp.chamadaqr;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Vibrator;
 import android.support.v4.app.ActivityCompat;
@@ -64,13 +65,12 @@ public class TelaQr extends AppCompatActivity {
             public void surfaceCreated(SurfaceHolder sh) {
                 try {
                     if (ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                        ActivityCompat.requestPermissions(TelaQr.this,
-                                new String[]{android.Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION_ID);
-
+                        ActivityCompat.requestPermissions(TelaQr.this, new String[]{android.Manifest.permission.CAMERA}, REQUEST_CAMERA_PERMISSION_ID);
                         return;
                     }
 
-                    cameraSource.start();
+                    cameraSource.start(cameraPreview.getHolder());
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -78,15 +78,6 @@ public class TelaQr extends AppCompatActivity {
 
             @Override
             public void surfaceChanged(SurfaceHolder sh, int i, int i1, int i2) {
-                /*try {
-                    if (ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-
-                        return;
-                    }
-                    cameraSource.start();
-                }catch(IOException e){
-                    e.printStackTrace();
-                }*/
             }
 
             @Override
@@ -110,7 +101,14 @@ public class TelaQr extends AppCompatActivity {
                         public void run(){
                             Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
                             vibrator.vibrate(100);
-                            txtResult.setText(qrcodes.valueAt(0).displayValue);
+                            try {
+                                Intent resultado = new Intent();
+                                resultado.putExtra("nome", "Voltou...");
+                                setResult(RESULT_OK, resultado);
+                                finish();
+                            } catch (Throwable throwable) {
+                                throwable.printStackTrace();
+                            }
                         }
                     });
                 }

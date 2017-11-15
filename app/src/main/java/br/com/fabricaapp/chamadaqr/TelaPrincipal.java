@@ -9,6 +9,7 @@ import android.widget.Button;
 public class TelaPrincipal extends AppCompatActivity {
 
     public Button btnQr;
+    public int result = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +20,18 @@ public class TelaPrincipal extends AppCompatActivity {
         btnQr.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(TelaPrincipal.this, TelaQr.class));
+                Intent telaQr = new Intent(TelaPrincipal.this, TelaQr.class);
+                startActivityForResult(telaQr, result);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == result){
+            if(resultCode == RESULT_OK){
+                btnQr.setText(data.getStringExtra("nome"));
+            }
+        }
     }
 }

@@ -2,25 +2,25 @@ package br.com.fabricaapp.chamadaqr.adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
 import br.com.fabricaapp.chamadaqr.ClickRecyclerView;
 import br.com.fabricaapp.chamadaqr.R;
+import br.com.fabricaapp.chamadaqr.activity.TelaCadastroActivity;
 import br.com.fabricaapp.chamadaqr.domain.Evento;
-
-import static android.os.Build.VERSION_CODES.M;
 
 public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoViewHolder> {
     public static ClickRecyclerView clickRecyclerView;
+    //public static EventoClickListener eventoClickListener;
     private List<Evento> eventos;
     private Context context;
 
@@ -39,11 +39,10 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
     }
 
     @Override
-    public void onBindViewHolder(EventoViewHolder viewHolder, int position){
+    public void onBindViewHolder(final EventoViewHolder viewHolder, final int position){
         //EventoViewHolder holder = (EventoViewHolder) viewHolder;
         Evento evento = eventos.get(position);
         viewHolder.nome.setText(evento.getNome());
-
     }
 
     @Override
@@ -51,31 +50,32 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         return eventos.size();
     }
 
-    /*public void setClickRecyclerView(ClickRecyclerView clickRecyclerView){
-        this.
-    }*/
+
+    public interface EventoClickListener {
+        public void onClickEvento(View view, int position);
+    }
 
 
-    protected class EventoViewHolder extends RecyclerView.ViewHolder {
+    protected class EventoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         final TextView nome;
         /*final TextView local;
         final TextView data;
         final TextView detalhes;*/
-        CardView cardView;
 
         public EventoViewHolder(View view){
             super(view);
-
+            context = view.getContext();
             nome = (TextView) view.findViewById(R.id.textview_nome);
-            //cardView = (CardView) view.findViewById(R.id.card_view);
+            view.setClickable(true);
+            view.setOnClickListener(this);
 
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    clickRecyclerView.onCustomClick(eventos.get(getLayoutPosition()));
-                }
-            });
         }
 
+        @Override
+        public void onClick(View view) {
+            final Intent intent;
+            intent = new Intent(context, TelaCadastroActivity.class);
+            context.startActivity(intent);
+        }
     }
 }

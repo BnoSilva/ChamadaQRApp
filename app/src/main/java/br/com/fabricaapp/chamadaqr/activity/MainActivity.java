@@ -38,19 +38,27 @@ public class MainActivity extends AppCompatActivity
                     String usuario = txt_Login.getText().toString();
                     String senha = txt_Senha.getText().toString();
                     if (usuario.equals("admin") && senha.equals("1234")) {
+<<<<<<< HEAD:app/src/main/java/br/com/fabricaapp/chamadaqr/activity/MainActivity.java
                     Intent TelaPrincipal = new Intent(MainActivity.this, TelaPrincipalActivity.class);
                     startActivity(TelaPrincipal);
+=======
+                        startActivity(new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaPrincipal.class));
+>>>>>>> 943c0c8de8945d2543aa3e4048ef5b37686ca113:app/src/main/java/br/com/fabricaapp/chamadaqr/MainActivity.java
                     } else {
-                    AlertDialog.Builder msgErro = new AlertDialog.Builder(this);
-                    msgErro.setTitle("Erro");
-                    msgErro.setMessage("Usuário ou Senha incorretos\nTente Novamente");
-                    alertaLogin = msgErro.create();
-                    alertaLogin.show();
+                        AlertDialog.Builder msgErro = new AlertDialog.Builder(this);
+                        msgErro.setTitle("Erro");
+                        msgErro.setMessage("Usuário ou Senha incorretos\nTente Novamente");
+                        alertaLogin = msgErro.create();
+                        alertaLogin.show();
                     }
                 break;
                 case R.id.btnRegistrar:
+<<<<<<< HEAD:app/src/main/java/br/com/fabricaapp/chamadaqr/activity/MainActivity.java
                     Intent TelaCadastro = new Intent(MainActivity.this, TelaCadastroActivity.class);
                     startActivity(TelaCadastro);
+=======
+                    startActivity(new Intent(MainActivity.this, br.com.fabricaapp.chamadaqr.TelaCadastro.class));
+>>>>>>> 943c0c8de8945d2543aa3e4048ef5b37686ca113:app/src/main/java/br/com/fabricaapp/chamadaqr/MainActivity.java
                     break;
             }
         }

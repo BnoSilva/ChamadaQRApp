@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.fabricaapp.chamadaqr">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,8 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".activity.TelaCadastroActivity" />
         <activity android:name=".activity.TelaPrincipalActivity" />
+=======
+        <activity android:name=".TelaCadastro" />
+        <activity android:name=".TelaPrincipal"></activity>
+        <activity android:name=".TelaQr"
+            android:screenOrientation="portrait"/>
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+
+>>>>>>> 943c0c8de8945d2543aa3e4048ef5b37686ca113
     </application>
 
 </manifest>

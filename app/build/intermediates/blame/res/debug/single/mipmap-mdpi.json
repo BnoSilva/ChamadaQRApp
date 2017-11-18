@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\evento.png",
+        "source": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\src\\main\\res\\mipmap-mdpi\\evento.png"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    }
+]

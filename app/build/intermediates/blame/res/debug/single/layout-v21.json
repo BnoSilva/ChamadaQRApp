@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\activity_main.xml",
+        "source": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\src\\main\\res\\layout-v21\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\BrunoA\\.android\\build-cache\\a2c480cf17f080b29cf4f614a8310b6da0f87dc9\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\BrunoA\\.android\\build-cache\\a2c480cf17f080b29cf4f614a8310b6da0f87dc9\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\BrunoA\\.android\\build-cache\\a2c480cf17f080b29cf4f614a8310b6da0f87dc9\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\BrunoA\\.android\\build-cache\\a2c480cf17f080b29cf4f614a8310b6da0f87dc9\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

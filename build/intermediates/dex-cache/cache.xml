@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\BrunoA\AndroidStudioProjects\ChamadaQR\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\BrunoA\AndroidStudioProjects\ChamadaQR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d3ed5c99e367ac4332dfd2b9c012004a89d3bb31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\BrunoA\AndroidStudioProjects\ChamadaQR\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="df1c97620ac72a71d1eb1e0e4afcefb641ca9575">
+        <dex dex="C:\Users\BrunoA\AndroidStudioProjects\ChamadaQR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_777fd1775a3ec94cbc42a36e84e749866e56901e\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,7 @@
+#Sat Nov 18 07:44:02 BRST 2017
+base.0=C\:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_777fd1775a3ec94cbc42a36e84e749866e56901e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d3ed5c99e367ac4332dfd2b9c012004a89d3bb31\\classes.dex
+base.1=C\:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_d3ed5c99e367ac4332dfd2b9c012004a89d3bb31
+file.0=C\:\\Users\\BrunoA\\AndroidStudioProjects\\ChamadaQR\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_777fd1775a3ec94cbc42a36e84e749866e56901e\\classes.dex

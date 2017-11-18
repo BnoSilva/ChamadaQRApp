@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.ImageView;
+=======
+>>>>>>> 2fe7c2bf6572e969e25683ccd96ef831882d647d
 import android.widget.TextView;
 
 import java.util.List;
@@ -62,14 +65,20 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         /*final TextView local;
         final TextView data;
         final TextView detalhes;*/
+<<<<<<< HEAD
         ImageView imgEvento;
+=======
+>>>>>>> 2fe7c2bf6572e969e25683ccd96ef831882d647d
 
         public EventoViewHolder(View view){
             super(view);
             context = view.getContext();
             nome = (TextView) view.findViewById(R.id.textview_nome);
+<<<<<<< HEAD
             imgEvento = (ImageView) view.findViewById(R.id.imgEvento);
             imgEvento.setImageResource(R.mipmap.ic_launcher);
+=======
+>>>>>>> 2fe7c2bf6572e969e25683ccd96ef831882d647d
             view.setClickable(true);
             view.setOnClickListener(this);
 

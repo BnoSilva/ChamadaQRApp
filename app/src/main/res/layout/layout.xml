@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="140dp"
+=======
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+>>>>>>> 2fe7c2bf6572e969e25683ccd96ef831882d647d
     android:orientation="vertical"
     tools:context=".activity.TelaPrincipalActivity">
 
@@ -36,11 +42,18 @@
 
                 <TextView
                     android:id="@+id/textview_nome"
+<<<<<<< HEAD
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Evento: "
                     android:textSize="25sp" />
 
+=======
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teste do nome"
+                    android:textSize="20dp" />
+>>>>>>> 2fe7c2bf6572e969e25683ccd96ef831882d647d
 
             </LinearLayout>
 

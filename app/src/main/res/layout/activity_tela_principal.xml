@@ -7,18 +7,21 @@
     android:layout_height="match_parent"
     tools:context="br.com.fabricaapp.chamadaqr.activity.TelaPrincipalActivity">
 
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerEventos"
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
 
-    <android.support.design.widget.FloatingActionButton
+
+    <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_fabteste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="18dp"
-        android:clickable="true"/>
+        android:clickable="true"/>-->
 
 </RelativeLayout>

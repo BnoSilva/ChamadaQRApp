@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:label="@string/formulario_projetos"
+            android:name=".activity.FormularioProjetosActivity" />
         <activity android:name=".activity.TelaCadastroActivity" />
         <activity android:name=".activity.TelaPrincipalActivity" />
         <activity android:name=".activity.TelaQR"></activity>

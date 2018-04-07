@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> 04e84c4159470f58d99f46d3395ef99cbdd92c62
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    android:minHeight="?attr/actionBarSize" />
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+android:background="?attr/colorPrimary"
+android:minHeight="?attr/actionBarSize" />

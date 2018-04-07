@@ -24,7 +24,9 @@
             android:name=".activity.TelaPrincipalActivity"
             android:label="@string/telaEventos" />
         <activity android:name=".activity.TelaQR" />
-        <activity android:name=".activity.TelaDetalhesEvento"></activity>       <activity android:name=".activity.TelaPrincipalActivity" />
-        <activity android:name=".activity.TelaQR"></activity>   </application>
+        <activity android:name=".activity.TelaDetalhesEvento">
+        </activity>
+
+    </application>
 
 </manifest>

@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         txt_Login = (EditText) findViewById(R.id.txtUsuario);
         txt_Senha = (EditText) findViewById(R.id.txtSenha);

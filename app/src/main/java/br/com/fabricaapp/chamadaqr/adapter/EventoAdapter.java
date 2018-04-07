@@ -17,6 +17,7 @@ import java.util.List;
 import br.com.fabricaapp.chamadaqr.ClickRecyclerView;
 import br.com.fabricaapp.chamadaqr.R;
 import br.com.fabricaapp.chamadaqr.activity.TelaCadastroActivity;
+import br.com.fabricaapp.chamadaqr.activity.TelaDetalhesEvento;
 import br.com.fabricaapp.chamadaqr.domain.Evento;
 
 public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoViewHolder> {
@@ -78,7 +79,7 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         @Override
         public void onClick(View view) {
             final Intent intent;
-            intent = new Intent(context, TelaCadastroActivity.class);
+            intent = new Intent(context, TelaDetalhesEvento.class);
             context.startActivity(intent);
         }
     }

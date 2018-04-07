@@ -33,6 +33,7 @@ public class TelaPrincipalActivity extends AppCompatActivity implements ClickRec
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_tela_principal);
 
         setRecyclerView();

@@ -9,5 +9,5 @@
     <string name="lblInicioEvento">Início: </string>
     <string name="lblTerminoEvento">Término: </string>
     <string name="acessarCamera">Marcar Presença</string>
-
+    <string name="formulario_projetos">Cadastro de Projeto</string>
 </resources>
